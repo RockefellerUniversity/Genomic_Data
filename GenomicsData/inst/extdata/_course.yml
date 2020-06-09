@@ -1,6 +1,6 @@
 Description:
   CourseName: Genomic Data
-OverviewRmd: CourseOverview.Rmd
+  OverviewRmd: CourseOverview.Rmd
 Presentations:
   titles: Session1 Session2
   PresRmd: GenomicData.Rmd DataRepositories.Rmd
