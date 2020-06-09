@@ -5,4 +5,4 @@ Presentations:
   titles: Session1 Session2
   PresRmd: GenomicData.Rmd DataRepositories.Rmd
   PresOverviewRmd: GenomicData_Session1.Rmd GenomicData_Session2.Rmd
-  Exercises: 
+  Exercises: exercise_1.Rmd
