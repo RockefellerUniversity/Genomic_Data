@@ -9,11 +9,11 @@ navbar:
     - text: Session1
       menu:
       - text: Slide
-        href: presentations/slides/GenomicData.html
+        href: presentations/slides/GenomicsData.html
       - text: Single Page
-        href: presentations/singlepage/GenomicData.html
+        href: presentations/singlepage/GenomicsData.html
       - text: Code
-        href: presentations/r_code/GenomicData.R
+        href: presentations/r_code/GenomicsData.R
     - text: Session2
       menu:
       - text: Slide
