@@ -179,6 +179,7 @@ class: inverse, center, middle
 - Read name.
 - Sequence of read.
 - Encoded sequence quality.
+
 ---
 
 ## Aligned sequences
@@ -191,7 +192,7 @@ class: inverse, center, middle
 - Chromosome to which read aligns.
 - Position in chromosome to which 5' of read aligns.
 - Alignment information - "Cigar string".
-    - 100M - Continuous match of 100 bases
+    - 100M - Continuous match of 100 bases
     - 28M1D72M - 28 bases continuously match, 1 deletion from reference, 72 base match
 
 ---
@@ -204,11 +205,13 @@ class: inverse, center, middle
 </div>
 
 - Bit flag - TRUE/FALSE for pre-defined read criteria
-    - Paired? Duplicate? 
+    - Paired? Duplicate? 
     - https://broadinstitute.github.io/picard/explain-flags.html
 - Paired read position and insert size
 - User defined flags.
 
+---
+class: inverse, center, middle
 
 # Summarised Genomic Features formats.
 <html><div style='float:left'></div><hr color='#EB811B' size=1px width=720px></html> 
