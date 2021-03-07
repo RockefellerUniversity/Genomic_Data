@@ -61,6 +61,8 @@ jobs:
           remotes::install_deps("GenomicsData/",dependencies = TRUE)
           remotes::install_cran("rcmdcheck")
           remotes::install_cran("BiocManager")
+          remotes::install_cran("pkgload")
+          remotes::install_cran("desc")
           BiocManager::install("rmarkdown")
           BiocManager::install("devtools")
           BiocManager::install("RockefellerUniversity/compileCourses",subdir="compileCourses")  
