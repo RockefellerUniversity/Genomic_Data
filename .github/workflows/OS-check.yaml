@@ -76,10 +76,7 @@ jobs:
         shell: Rscript {0}
 
       - name: Install package
-        if: github.ref == 'refs/heads/master' 
-        run: |
-          devtools::install("GenomicsData/",dependencies = TRUE,quick = TRUE)
-        shell: Rscript {0}
+        run: R CMD INSTALL ./GenomicsData/
 
       - name: CompileCourse
         run: |
