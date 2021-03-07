@@ -18,9 +18,10 @@ class: center, middle, inverse, title-slide
 
 ---
 
-
+class: inverse, center, middle
 
 # Genomics Data
+&lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#EB811B' size=1px width=720px&gt;&lt;/html&gt; 
 
 ---
 ## Overview
@@ -32,6 +33,7 @@ class: center, middle, inverse, title-slide
 - GFF/GTF (Gene annotation).
 - Wiggle files, BEDgraphs and BigWigs (Genomic scores).
 - VCF and MAF (Genomic variations).
+- HDF5 and Loom (Experimental measurements and metadata)
 
 ---
 class: inverse, center, middle
@@ -401,6 +403,73 @@ class: inverse, center, middle
     - Wiggle and bedGraph -&gt; bigWig (.bw/.bigWig)
     - BED -&gt; bigBed (.bb)
     - BED, VCF and GFF -&gt; (.gz and index file of .tbi)
+
+---
+class: inverse, center, middle
+
+# Experimental assays and metadata
+&lt;html&gt;&lt;div style='float:left'&gt;&lt;/div&gt;&lt;hr color='#EB811B' size=1px width=720px&gt;&lt;/html&gt; 
+
+---
+## Assays and metadata
+
+The results of many experimental assays are summarised in combinations of tqbles.
+
+For example an experimental result could contain.
+
+- A table of measurements with columns as samples and rows as genes. 
+- A sample to metadata (i.e. sample group) relationship table.
+- A gene to gene information table.
+- Tables containing transformations of the data.
+
+---
+## Formats for experimental results.
+
+Historically we may have stored these results in Spreadsheets.
+&lt;div align="center"&gt;
+&lt;img src="imgs/ssComb.png" alt="igv" height="500" width="900"&gt;
+&lt;/div&gt;
+
+---
+## Efficient experiment results formats.
+
+With bigger datasets we want a format with.
+
+- Standards/cross-platform = Easier sharing of data.
+- Store and connect different data types = Maintain data and metadata information.
+- Fast and memory efficient retrieval of data = Handle big data queries.
+
+---
+## HDF5 (Hierachical Data Format)
+.pull-left[
+
+- Developed by the HDF5 group.
+- Format and associated set of software libraries.
+- Cross-platform support.
+- Self-described format
+- Fast memory efficent I/O and data operations.
+- Suitable for very large datasets and associated metadata.
+]
+.pull-right[
+&lt;div align="center"&gt;
+&lt;img src="imgs/HDF5.png" alt="igv" height="500" width="500"&gt;
+&lt;/div&gt;
+]
+---
+## Single cell data and Loom format
+
+- scRNA/scATAC and other single cell datasets can contain large matrices of per cell measurements, associated per cell and per gene metadata as well data transformations.
+- The Loom file format makes use of and extends the HDF5 format for single cell data.
+
+&lt;div align="center"&gt;
+&lt;img src="imgs/LOOM.png" alt="igv" height="150" width="600"&gt;
+&lt;/div&gt;
+
+Based on HDF5 so-
+
+- Implemented in multiple languages.
+- Fast and memory efficient access of scRNA data and metadata.
+
 
 ---
 ## Getting help and more information
