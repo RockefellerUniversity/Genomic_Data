@@ -441,7 +441,7 @@ With bigger datasets we want a format with.
 - Fast and memory efficient retrieval of data = Handle big data queries.
 
 ---
-## HDF5 (Hierachical Data Format)
+## HDF5 (hierarchical Data Format)
 .pull-left[
 
 - Developed by the HDF5 group.
