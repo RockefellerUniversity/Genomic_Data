@@ -1,5 +1,5 @@
 ---
-title: "Reference Genomes and Common Genomics File Formats"
+title: "Reference Genomes and Genomics File Formats"
 author: "Rockefeller University, Bioinformatics Resource Centre"
 date: "https://rockefelleruniversity.github.io/Genomic_Data/"
 output: 
