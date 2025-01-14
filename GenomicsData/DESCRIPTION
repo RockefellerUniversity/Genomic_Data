@@ -1,7 +1,7 @@
 Package: GenomicsData
 Type: Package
 Title: Genomics Data
-Version: 0.1.5
+Version: 0.1.6
 Author: Matt Paul and Thomas Carroll.
 Maintainer: Thomas Carroll <tc.infomatics@gmail>
 Description: More about what it does (maybe more than one line)
